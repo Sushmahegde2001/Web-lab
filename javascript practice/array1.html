@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Sorting array with using array method
+        // var arr=[4,6,7,8,2,1,-2];
+        // var sortedarr=arr.sort();
+        // document.write(sortedarr);
+        //Sorting array without using array method
+        
+        function sorted(arr,n)
+        {
+        var i,j,temp;
+        
+        for(i=0;i<n-1;i++)
+        {
+         for(j=i+1;j<n;j++)
+         {
+             if(a[i]>a[j])
+             {
+               a[i]=temp;
+               a[i]=a[j];
+               a[j]=temp;
+             }
+         }
+        }
+    }
+    function print(arr,size)
+    {
+        var i;
+        for(i=0;i<size,i++)
+        document.write(arr[i]+" ");
+    }
+    var arr=[4,6,7,8,2,1,-2];
+    var n=7;
+    sorted(arr,n);
+     print(arr,n);    
+        
+    </script>
+</body>
+</html>
