@@ -9,7 +9,18 @@
 </head>
 <body>
     <script>
-        
+          
+        const number = parseInt(prompt('Enter the number of terms: '));
+let s1 = 0, s2 = 1, nextTerm;
+
+console.log('Fibonacci Series:');
+
+for (let i = 1; i <= number; i++) {
+    document.write(s1);
+    nextTerm = s1 + s2;
+    s1 = s2;
+    s2 = nextTerm;
+}
     </script>
 </body>
 </html>
