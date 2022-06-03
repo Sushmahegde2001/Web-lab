@@ -1,0 +1,29 @@
+//Write a JavaScript method that reverts the input array
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        var n=prompt("Enter the size of the array");
+        var ar=[];
+        for(i=0;i<n;i++)
+        {
+            ar[i]=prompt("Enter the array elements");
+    }
+document.write("Array elements are: "+ ar +"<br>");
+for(i=0;i<n/2;i++)
+{
+    let temp=ar[i];
+    ar[i]=ar[n-i-1];
+    ar[n-i-1]=temp;
+}
+document.write("Reversed array:"+ar);
+    </script>
+</body>
+</html>

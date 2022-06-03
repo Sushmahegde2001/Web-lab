@@ -1,0 +1,27 @@
+//Write a JavaScript program to find the leap years in a given range of years
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+       function leapyr(year)
+       {
+           return (year%100===0)?(year%400===0):(year%4===0);
+       }
+       var year=prompt("enter the year");
+       var s=leapyr(year);
+       if(s==true)
+       {
+        document.write("It is a leap year");
+       }
+       else{
+        document.write("It is not a leap year");
+       }
+   </script> 
+</body>
+</html>
