@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function NSp(name)
+        {
+            var str=name.split(" ");
+            var stln=str.length;
+            var a=0,b;
+            while(a<(stln-1))
+            {
+                b=str[a].split("");
+                document.write(b[0]+".");
+                a=a+1;
+            }
+            document.write(str[stln-1]);
+        }
+        var Name=prompt("Enter the name");
+        NSp(Name);
+    </script>
+</body>
+</html>

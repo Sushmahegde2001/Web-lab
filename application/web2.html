@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function uc(strg)
+        {
+            var srt=strg;
+            var res=" ";
+            for(var a=0;a<srt.length;a++)
+            {
+              if(res.indexOf(srt.charAt(a))==-1)
+              {
+              res+=srt[a];
+            }
+        }
+            return res;
+            document.write(res);
+        }
+        console.log(uc("thequickbrownfoxjumpsoverthelazydog"));
+        document.write(uc("thequickbrownfoxjumpsoverthelazydog"));
+    </script>
+</body>
+</html>
