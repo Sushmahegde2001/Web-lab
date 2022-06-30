@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let func=(p,s)=>{ 
+for(let i=0;i<p.length;i++) 
+{ 
+if(p[i].length==s) 
+{ 
+console.log(p[i]); 
+} 
+} 
+} 
+let p=[]; 
+let n=prompt("Enter number of strings "); 
+for(let i=0;i<n;i++) 
+{ 
+p[i]=prompt("Enter the string "+(i+1)); 
+} 
+let s=prompt("Enter the length strings to capitalize "); 
+func(p,s); 
+
+    </script>
+</body>
+</html>

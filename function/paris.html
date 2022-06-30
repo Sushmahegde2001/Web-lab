@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function func(strg){
+            return new Promise((resolve,reject)=>{
+                let pattern=/paris/i;
+                let result=strg.match(pattern);
+                if(result)
+                resolve("Let's take a trip to PARIS!!");
+                else
+                reject("Invalid location")
+            })
+        }
+        let str=prompt("Enter a location");
+        func(str).then(function(a){alert(a)}).catch(function(error){alert(error)});
+    </script>
+</body>
+</html>
